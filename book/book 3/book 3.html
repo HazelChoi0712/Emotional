@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/book 3.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/icon.png">
+</head>
+<body>
+    <header>
+        <div class="container container_solid">
+          <div class="title_wrapper">
+            <h1>Hope</h1>
+          </div>
+        </div>
+      
+        <div class="container container_image" aria-hidden="true">
+          <div class="title_wrapper">
+            <h1>Hope</h1>
+          </div>
+        </div>
+      
+      </header>
+      
+      <section>
+        <p>
+            Mary had been walking slowly and thoughtfully for some time, but now she began to run a little. She felt as if she were being drawn forward by something she could not see, but which seemed to be urging her on, telling her that something good was coming, something wonderful. The air in the garden was sweet and damp with the fresh scents of growing things, and there were signs of life everywhere. The buds on the trees were swelling, and the earth, though still brown and bare, was trembling with new life beneath the surface. It was as if everything that had been hidden in the dark soil was waiting to burst forth into the light, and for the first time in her life, Mary could almost feel the hope that was alive in the world around her. It was as if the garden was whispering to her—offering a promise of rebirth, not just for the plants, but for herself. She felt a stirring inside her heart, a longing to nurture and care for this place, to see it thrive, just as she was beginning to thrive herself. The hope she had once lost seemed to be slowly returning, just like the spring that was slowly, surely, coming to life all around her.</p>
+
+        <h2>As she came closer to him she noticed that there was a change in him. He looked as if he were awakening from a long sleep.</h2>
+    </section>
+
+      <button onclick="history.back()">Go Back</button>
+
+      <div class="music-player">
+        <audio id="audio" autoplay loop>
+          <source src="assets/music 3.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="music-icon" onclick="toggleMusic()">
+          &#127925;
+        </div>
+      </div>
+
+      <script>
+        const audio = document.getElementById('audio');
+        function toggleMusic() {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        }
+      </script>
+</body>
+</html>
+    

@@ -1,0 +1,127 @@
+body {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, sans-serif;
+            background: #CCC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: scroll;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+            padding: 50px 0;
+        }
+
+        .page {
+            width: 400px;
+            height: 600px;
+            padding: 30px;
+            background: #FFF;
+            position: relative;
+            transform: rotate(-45deg) skewX(10deg) scale(.8);
+            box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .page h1 {
+            margin: 0 0 20px 0;
+            padding: 0;
+            text-align: center;
+            font-size: 25px;
+            color: #000;
+        }
+
+        .page img {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            height: 550px;
+        }
+
+        .page:before {
+            content: "";
+            width: 30px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: skewY(-45deg) translate(-57px, -43px);
+        }
+
+        .page:after {
+            content: "";
+            width: 106%;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: skewX(-45deg) translate(-11px, 30px);
+        }
+
+        /* Different colors for each book */
+        .book1 { border-left: 30px solid #306936; }
+        .book1:before { background: #234d27; }
+        .book1:after { background: #CCC; }
+
+        .book2 { border-left: 30px solid #353535; }
+        .book2:before { background: #181818; }
+        .book2:after { background: #AAA; }
+
+        .book3 { border-left: 30px solid #974442; }
+        .book3:before { background: #723333; }
+        .book3:after { background: #BBB; }
+
+        .book4 { border-left: 30px solid #2884e0; }
+        .book4:before { background: #004E8C; }
+        .book4:after { background: #DDD; }
+
+        @media screen and (max-width: 480px) {
+            body {
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 10px;
+            }
+        
+            .container {
+                gap: 40px;
+                padding: 30px 0;
+            }
+        
+            .page {
+                width: 250px;
+                height: 350px;
+                padding: 15px;
+                transform: rotate(-30deg) skewX(3deg) scale(.6);
+            }
+        
+            .page h1 {
+                font-size: 18px;
+            }
+        
+            .page img {
+                width: 250px;
+                height: 300px;
+            }
+        }
+
+        button {
+            color: #090909;
+            padding: 0.7em 1.7em;
+            font-size: 10px;
+            border-radius: 0.5em;
+            background: #e8e8e8;
+            cursor: pointer;
+            border: 1px solid #e8e8e8;
+            transition: all 0.3s;
+            box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+          }
+          
+          button:active {
+            color: #666;
+            box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+          }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/book 4.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/icon.png">
+</head>
+<body>
+    <header>
+        <div class="container container_solid">
+          <div class="title_wrapper">
+            <h1>Sadness</h1>
+          </div>
+        </div>
+      
+        <div class="container container_image" aria-hidden="true">
+          <div class="title_wrapper">
+            <h1>Sadness</h1>
+          </div>
+        </div>
+      
+      </header>
+      
+      <section>
+        <p>
+            Mary had been lying in her room for hours, staring out of the window at the bleak, gray sky. Everything seemed dull and lifeless to her. The flowers in the garden were gone, the trees were bare, and the cold wind blew across the empty landscape. She felt completely alone, as if the world had closed in around her, leaving her with nothing but a feeling of emptiness. She thought of her past life, the lonely days spent in the house with no one to talk to, the distant, unkind faces of the servants, the absence of warmth or love. There had never been anyone who cared about her. She had never known what it was to be truly loved or to have a place where she felt she belonged. Now, even in the house that was supposed to be her new home, she could not escape the feeling of sadness that clung to her. The silence in the house was oppressive, and the coldness of her own heart felt like a heavy weight, pressing down on her chest.</p>
+
+            <h2>
+                <span>No</span> 
+                <span>one</span> 
+                <span>ever</span> 
+                <span>knew</span> 
+                <span>how</span> 
+                <span>much</span> 
+                <span>the</span>
+                <span>mother</span>
+                <span>had</span>
+                <span>loved</span>
+                <span>the</span>
+                <span>garden</span>
+            </h2>
+    </section>
+
+      <button onclick="history.back()">Go Back</button>
+
+      <div class="music-player">
+        <audio id="audio" autoplay loop>
+          <source src="assets/music 4.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="music-icon" onclick="toggleMusic()">
+          &#127925;
+        </div>
+      </div>
+
+      <script>
+        const audio = document.getElementById('audio');
+        function toggleMusic() {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        }
+      </script>
+</body>
+</html>
+    

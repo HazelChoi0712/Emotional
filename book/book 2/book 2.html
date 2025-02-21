@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/book 2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/icon.png">
+</head>
+<body>
+    <header>
+        <div class="container container_solid">
+          <div class="title_wrapper">
+            <h1>Fear</h1>
+          </div>
+        </div>
+      
+        <div class="container container_image" aria-hidden="true">
+          <div class="title_wrapper">
+            <h1>Fear</h1>
+          </div>
+        </div>
+      
+      </header>
+      
+      <section>
+        <p>
+            She was awakened by the sound of the wind wuthering round the corners of the room and about the rattling windows. It sounded as if a whole flock of giant birds were thudding against the walls and trying to break in. She had been lying awake, turning from side to side for about an hour. She did not know what made her sit up in bed, all at once. The wind was wuthering and thumping and rattling, and suddenly she heard quite a different sound. It was a cry. It was almost a sob. She sat up and listened. It was not the wind now. It was a crying she had heard before. The house was not quite silent, but all the servants were in bed and nobody was moving. 'Surely I must be mistaken,' she said. 'If I were to go back to sleep, perhaps it would come again more distinctly.' But she did not go back to sleep. The crying went on, and she heard something else—the rustling of a dressing gown. She held her breath, afraid to move. The sound seemed to be coming nearer and nearer. She could feel her heart beating as she tried to listen harder. The house felt enormous and empty, full of echoes and shadows, and she felt very small and lonely in the middle of it all.</p>
+
+            <div class="text-container">
+                <div>If I were going to die," he said, "If I were going to die I should think I would be frightened.</div>
+                <div>But I am not. Why should I? The Magic has made me strong</div>
+                <div>and I feel as if I could never be afraid of anything again.</div>
+                <div>I never was afraid of anything. I was always miserable.</div>
+                <div>If I thought I was going to die, I cried and screamed, but I don’t think about it any more.</div>
+              <div>When I feel ill, I just go out in the garden and walk about.</div>
+            </div>
+    </section>
+
+      <button onclick="history.back()">Go Back</button>
+
+      <div class="music-player">
+        <audio id="audio" autoplay loop>
+          <source src="assets/music 2.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="music-icon" onclick="toggleMusic()">
+          &#127925;
+        </div>
+      </div>
+
+      <script>
+        const audio = document.getElementById('audio');
+        function toggleMusic() {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        }
+      </script>
+</body>
+</html>
+    

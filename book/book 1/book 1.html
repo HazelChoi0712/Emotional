@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/book 1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+
+    <link rel="icon" type="image/png" href="assets/icon.png">
+</head>
+<body>
+    <header>
+        <div class="container container_solid">
+          <div class="title_wrapper">
+            <h1>Joy</h1>
+          </div>
+        </div>
+      
+        <div class="container container_image" aria-hidden="true">
+          <div class="title_wrapper">
+            <h1>Joy</h1>
+          </div>
+        </div>
+      
+      </header>
+      
+      <section>
+        <p>
+        Just at that moment the sun was streaming through the ivy-covered archway and the door was open and the world outside was so joyous that Mary skipped and Dickon skipped and Colin laughed outright. ‘I shall get well! I shall get well!’ he cried out. ‘Mary! Dickon! I shall get well! And I shall live forever and ever and ever!’ The sun was pouring golden light and warmth over everything and there were crimson and blue flowers lifting their heads, and the grass and trees were green and birds were singing and butterflies were flying and everything was alive with the hope and joy of morning. Mary and Dickon stood and laughed too and then they sat down with Colin and watched the world waking up and coming alive in the secret garden.       </p>
+
+      <h2 class="bouncing-text">Perhaps there is a language which is not made of words and everything in the world understands it.</h2>
+      <h2 class="bouncing-text">Perhaps the wind and the grass and the things which grow and live and are not spoken to can understand words which are not spoken.</h2>
+    </section>
+
+      <button onclick="history.back()">Go Back</button>
+
+      <div class="music-player">
+        <audio id="audio" autoplay loop>
+          <source src="assets/music 1.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="music-icon" onclick="toggleMusic()">
+          &#127925;
+        </div>
+      </div>
+
+      <script>
+        const audio = document.getElementById('audio');
+        function toggleMusic() {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        }
+      </script>
+</body>
+</html>
+    
